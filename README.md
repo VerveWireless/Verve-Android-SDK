@@ -17,12 +17,12 @@ The following permission is optional:
 Add the following elements within your project's Application tag:
 ``` 
     <activity
-            android:name="com.verve.adview.AdViewActivity"
+            android:name="com.verve.activities.AdViewActivity"
             android:configChanges="orientation|screenSize|keyboard"
             android:hardwareAccelerated="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
      <activity
-            android:name="com.verve.adview.ClickOutActivity"
+            android:name="com.verve.activities.ClickOutActivity"
             android:screenOrientation="locked"
             android:configChanges="orientation|screenSize|keyboard"
             android:hardwareAccelerated="true"
@@ -112,9 +112,9 @@ The ad SDK allows for various sized banner ads to be addded to your Android appl
 #### Option 1: Create your banner in XML
 ##### Create a BannerAdView in the XML Resource
 
-Note: Be sure to include the Verve namespace, xmlns:verve="http://schemas.android.com/apk/lib/com.verve.adview", in the XML.
+Note: Be sure to include the Verve namespace, xmlns:verve="http://schemas.android.com/apk/lib/com.verve.api.adview.adview", in the XML.
 ``` 
-<com.verve.adview.BannerAdView
+<com.verve.api.adview.BannerAdView
 		android:id="@+id/bannerAdView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
