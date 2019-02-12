@@ -29,6 +29,11 @@ Add the following elements within your project's Application tag:
             verve:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
 ```
 
+Dependencies
+------------------------------
+```
+implementation 'com.google.android.gms:play-services-ads:
+```
 
 Implementing the Verve Ad SDK
 ------------------------------
