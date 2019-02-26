@@ -32,16 +32,16 @@ Add the following elements within your project's Application tag:
 Dependencies
 ------------------------------
 ```
-implementation 'com.google.android.gms:play-services-ads:
+implementation 'com.google.android.gms:play-services-ads:'
 ```
 
 Implementing the Verve Ad SDK
 ------------------------------
 ### Rewarded Video Ads
-The class in which you would like to display rewarded video ads will need to implement the IVerveAPIListener interface. The methods that the class will implement provides the Activity with information regarding the SDK's ad state.
+The class in which you would like to display rewarded video ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
 #### Initialization
-To request a rewarded video ad, you will need to create an of `RewardedVideoAd` object:
+To request a rewarded video ad, you will need to create a `RewardedVideoAd` object:
 ```
 RewardedVideoAd rewardedVideoAd = new RewardedVideoAd(context, APP_ID, this)    
 // 'this' refers to class that is implementing IVerveAPIListener
@@ -49,14 +49,14 @@ RewardedVideoAd rewardedVideoAd = new RewardedVideoAd(context, APP_ID, this)
 Your APP_ID will be provided to you during the Verve onboarding process.
 
 #### Loading A Rewarded Video Ad
-To reuqest a rewarded video ad call the load method below: 
+To request a rewarded video ad, call the load method below: 
 ```
 rewardedVideoAd.loadRewardedVideoAd(zone)
 \\ zone is the identifier used to request a rewarded video ad
 ```
 
 #### Loading A Rewarded Video Ad with ad mark up
-To reuqest a rewarded video ad call the load method below: 
+To request a rewarded video ad, call the load method below: 
 ```
 rewardedVideoAd.loadRewardedVideoAd(zone, id, adm)
 \\ zone is the string identifier used to request a rewarded video ad
@@ -65,16 +65,16 @@ rewardedVideoAd.loadRewardedVideoAd(zone, id, adm)
 ```
 
 #### Showing An Ad
-After receiving the `onAdReady(String zone)` callback, the SDK is ready to show the ad that you have loaded. To show an ad call the method below:
+After receiving the `onAdReady(String zone)` callback, the SDK is ready to show the ad you have loaded. To show an ad, call the method below:
 ```
 rewardedVideoAd.showRewardedVideoAd(zone, context)
 ```
 
 ### Interstitial Ads
-The class in which you would like to display interstitial ads will need to implement the IVerveAPIListener interface. The methods that the class will implement provides the Activity with information regarding the SDK's ad state.
+The class in which you would like to display interstitial ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
 #### Initialization
-To request a interstitial ad, you will need to create an of `InterstitialAd` object:
+To request an interstitial ad, you will need to create an `InterstitialAd` object:
 ```
 InterstitialAd interstitialAd = new InterstitialAd(context, APP_ID, this)    
 // 'this' refers to class that is implementing IVerveAPIListener
@@ -82,13 +82,13 @@ InterstitialAd interstitialAd = new InterstitialAd(context, APP_ID, this)
 Your APP_ID will be provided to you during the Verve onboarding process.
 
 #### Loading A Interstitial Ad
-To reuqest a interstitial ad call the load method below: 
+To request an interstitial ad, call the load method below: 
 ```
 interstitialAd.loadInterstitialAd(zone) \\ zone is the identifier used to request a interstitial ad
 ```
 
 #### Loading A Interstitial Ad with ad mark up
-To reuqest a interstitial ad call the load method below: 
+To request an interstitial ad, call the load method below: 
 ```
 interstitialAd.loadInterstitialAd(zone, id, adm)
 \\ zone is the string identifier used to request a interstitial ad
@@ -97,13 +97,13 @@ interstitialAd.loadInterstitialAd(zone, id, adm)
 ```
 
 #### Showing An Ad
-After receiving the `onAdReady(String zone)` callback, the SDK is ready to show the ad that you have loaded. To show an ad call the method below:
+After receiving the `onAdReady(String zone)` callback, the SDK is ready to show the ad you have loaded. To show an ad, call the method below:
 ```
 interstitialAd.showInterstitialAd(zone, context) 
 ```
 
 ### Banner Ads
-The class in which you would like to display banner ads will need to implement the IVerveAPIListener interface. The methods that the class will implement provides the Activity with information regarding the SDK's ad state.
+The class in which you would like to display banner ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
 #### Banner Ad Sizes
 The ad SDK allows for various sized banner ads to be addded to your Android application. Please see the table below for the different sizes available: 
@@ -128,16 +128,16 @@ Note: Be sure to include the Verve namespace, xmlns:verve="http://schemas.androi
         verve:ad_size="BANNER"/>
 ```
 
-In the class that is displaying the XML retrieve the BannerAdView id :
+In the class that is displaying the XML retrieve the BannerAdView id:
 ```
 BannerAdView bannerAdView = (BannerAdView) findViewById(R.id.bannerAdView)
 ```
-Afterwards, set the iVerveAPIListener to bannerAdView object:
+Then set the iVerveAPIListener to bannerAdView object:
 ```
 bannerAdView.setiVerveAPIListener(this)
 ```
 
-When creating BannerAdView via XML, the view will automatically fetch an ad when created. To call request an ad after the first initial load call:
+When creating BannerAdView via XML, the view will automatically fetch an ad when created. To request an ad after the first initial load call:
 ```
 bannerAdView.loadBannerAd(zone)
 \\ zone is the identifier used to request a banner ad
@@ -145,7 +145,7 @@ bannerAdView.loadBannerAd(zone)
 
 #### Option 2: Create your banner programmatically
 ##### Initialization
-To request a banner ad, you will need to create an of `BannerAdView` object:
+To request a banner ad, you will need to create a `BannerAdView` object:
 ```
 BannerAdView bannerAdView = new BannerAdView(context, APP_ID, AdSize, this)    
 // 'this' refers to class that is implementing IVerveAPIListener
@@ -153,7 +153,7 @@ BannerAdView bannerAdView = new BannerAdView(context, APP_ID, AdSize, this)
 Your APP_ID will be provided to you during the Verve onboarding process.
 
 ##### Loading & Showing A Banner Ad
-To request a banner ad call the load method below: 
+To request a banner ad call, the load method below: 
 ```
 bannerAdView.loadBannerAd(zone)
 \\ zone is the identifier used to request a banner ad
