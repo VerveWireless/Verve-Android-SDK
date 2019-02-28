@@ -42,7 +42,7 @@ Verve should have sent you a unique identifier for your application. This identi
 Implementing the Verve Ad SDK
 ------------------------------
 
-### Interstitial Ads
+## Interstitial Ads
 The class in which you would like to display interstitial ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
 #### Initialization
@@ -72,7 +72,7 @@ After receiving the `onAdReady(String zone)` callback, the SDK is ready to show 
 interstitialAd.showInterstitialAd(zone, context) 
 ```
 
-### Rewarded Video Ads
+## Rewarded Video Ads
 The class in which you would like to display rewarded video ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
 #### Initialization
@@ -103,7 +103,7 @@ After receiving the `onAdReady(String zone)` callback, the SDK is ready to show 
 rewardedVideoAd.showRewardedVideoAd(zone, context)
 ```
 
-### Banner Ads
+## Banner Ads
 The class in which you would like to display banner ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
 ### Banner Ad Sizes
