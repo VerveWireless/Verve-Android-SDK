@@ -41,8 +41,9 @@ Verve should have sent you a unique identifier for your application. This identi
 
 Implementing the Verve Ad SDK
 ------------------------------
-### Rewarded Video Ads
-The class in which you would like to display rewarded video ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
+
+### Interstitial Ads
+The class in which you would like to display interstitial ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
 #### Initialization
 To request a rewarded video ad, you will need to create a `RewardedVideoAd` object:
@@ -52,30 +53,30 @@ InterstitialAd interstitialAd = new InterstitialAd(context, APP_ID, this)
 ```
 Your `APP_ID` will be provided to you during the Verve onboarding process.
 
-#### Loading A Rewarded Video Ad
+#### Loading an Interstitial Video Ad
 To request a rewarded video ad, call the load method below: 
 ```
 // Zone is the identifier used to request a interstitial ad
 interstitialAd.loadInterstitialAd(zone)
 ```
 
-#### Loading A Rewarded Video Ad with ad mark up
+#### Loading an Interstital Ad with ad mark up
 To request a rewarded video ad, call the load method below: 
 ```
 interstitialAd.loadInterstitialAd(zone, id, adm)
 ```
 
-#### Showing An Ad
+#### Showing an Interstital Ad
 After receiving the `onAdReady(String zone)` callback, the SDK is ready to show the ad you have loaded. To show an ad, call the method below:
 ```
 interstitialAd.showInterstitialAd(zone, context) 
 ```
 
-### Interstitial Ads
-The class in which you would like to display interstitial ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
+### Rewarded Video Ads
+The class in which you would like to display rewarded video ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
 #### Initialization
-To request an interstitial ad, you will need to create an `InterstitialAd` object:
+To request a rewarded video ad, you will need to create an `InterstitialAd` object:
 ```
 // 'this' refers to class that is implementing IVerveAPIListener
 RewardedVideoAd rewardedVideoAd = new RewardedVideoAd(context, APP_ID, this)    
@@ -83,27 +84,24 @@ RewardedVideoAd rewardedVideoAd = new RewardedVideoAd(context, APP_ID, this)
 Your `APP_ID` will be provided to you during the Verve onboarding process.
 
 
-#### Loading A Interstitial Ad
+#### Loading a Rewarded Video Ad
 To request an interstitial ad, call the load method below: 
 ```
 // zone is the identifier used to request a rewarded video ad
 rewardedVideoAd.loadRewardedVideoAd(zone)
 ```
 
-
-#### Loading A Interstitial Ad with ad mark up
+#### Loading a Rewarded Video Ad with ad mark up
 To request an interstitial ad, call the load method below: 
 ```
 rewardedVideoAd.loadRewardedVideoAd(zone, id, adm)
 ```
 
-
-#### Showing An Ad
+#### Showing a Rewarded Video Ad
 After receiving the `onAdReady(String zone)` callback, the SDK is ready to show the ad you have loaded. To show an ad, call the method below:
 ```
 rewardedVideoAd.showRewardedVideoAd(zone, context)
 ```
-
 
 ### Banner Ads
 The class in which you would like to display banner ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
@@ -146,7 +144,6 @@ When creating BannerAdView via XML, the view will automatically fetch an ad when
 \\ zone is the identifier used to request a banner ad
 bannerAdView.loadBannerAd(zone)
 ```
-
 
 #### Option 2: Create your banner programmatically
 ##### Initialization
