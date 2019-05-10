@@ -57,19 +57,19 @@ Your `APP_ID` will be provided to you during the Verve onboarding process.
 To request a rewarded video ad, call the load method below: 
 ```
 // Zone is the identifier used to request a interstitial ad
-interstitialAd.loadInterstitialAd(zone)
+interstitialAd.loadInterstitialAd(zone) //If you havent recieved a zone, you can pass an empty string or null
 ```
 
 #### Loading an Interstital Ad with ad mark up
 To request a rewarded video ad, call the load method below: 
 ```
-interstitialAd.loadInterstitialAd(zone, id, adm)
+interstitialAd.loadInterstitialAd(zone, id, adm)//If you havent recieved a zone, you can pass an empty string or null
 ```
 
 #### Showing an Interstital Ad
 After receiving the `onAdReady(String zone)` callback, the SDK is ready to show the ad you have loaded. To show an ad, call the method below:
 ```
-interstitialAd.showInterstitialAd(zone, context) 
+interstitialAd.showInterstitialAd(zone, context) //If you havent recieved a zone, you can pass an empty string or null
 ```
 
 ## Rewarded Video Ads
@@ -88,19 +88,19 @@ Your `APP_ID` will be provided to you during the Verve onboarding process.
 To request an interstitial ad, call the load method below: 
 ```
 // zone is the identifier used to request a rewarded video ad
-rewardedVideoAd.loadRewardedVideoAd(zone)
+rewardedVideoAd.loadRewardedVideoAd(zone)//If you havent recieved a zone, you can pass an empty string or null
 ```
 
 #### Loading a Rewarded Video Ad with ad mark up
 To request an interstitial ad, call the load method below: 
 ```
-rewardedVideoAd.loadRewardedVideoAd(zone, id, adm)
+rewardedVideoAd.loadRewardedVideoAd(zone, id, adm)//If you havent recieved a zone, you can pass an empty string or null
 ```
 
 #### Showing a Rewarded Video Ad
 After receiving the `onAdReady(String zone)` callback, the SDK is ready to show the ad you have loaded. To show an ad, call the method below:
 ```
-rewardedVideoAd.showRewardedVideoAd(zone, context)
+rewardedVideoAd.showRewardedVideoAd(zone, context)//If you havent recieved a zone, you can pass an empty string or null
 ```
 
 ## Banner Ads
@@ -142,7 +142,7 @@ bannerAdView.setIVerveAPIListener(this)
 When creating BannerAdView via XML, the view will automatically fetch an ad when created. To request an ad after the first initial load call:
 ```
 \\ zone is the identifier used to request a banner ad
-bannerAdView.loadBannerAd(zone)
+bannerAdView.loadBannerAd(zone)//If you havent recieved a zone, you can pass an empty string or null
 ```
 
 #### Option 2: Create your banner programmatically
@@ -159,7 +159,7 @@ Your `APP_ID` will be provided to you during the Verve onboarding process.
 To request a banner ad call, the load method below: 
 ```
 \\ zone is the identifier used to request a banner ad
-bannerAdView.loadBannerAd(zone)
+bannerAdView.loadBannerAd(zone)//If you havent recieved a zone, you can pass an empty string or null
 ```
 
 If the bannerAdView successfully loads an ad it will display itself in the view. The bannerAdView will also inform `onAdReady()` callback that ad is ready to displayed.
