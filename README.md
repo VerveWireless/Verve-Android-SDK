@@ -39,7 +39,7 @@ implementation 'com.google.android.gms:play-services-ads:'
 Verve should have sent you a unique identifier for your application. This identifier should be used to fill in the fields labelled `APP_ID`. If you do not have an `APP_ID`, please contact your Verve Publisher Services account manager.
 
 ## Zones
-The zone field can be passed an arbitrary string or can be used to target ads in certain situations. If you were directed by a Verve representative to use "keywords" these should be passed in the Zone field. If using an arbitrary string limit the string length to 100 characters. The "|" character is also restricted. A nil or NULL Zone will be treated as an empty string.
+The zone field can be passed an arbitrary string or can be used to target ads in certain situations. If you were directed by a Verve representative to use "keywords" these should be passed in the Zone field. If using an arbitrary string limit the string length to 100 characters. The "|" character is also restricted. A null Zone will be treated as an empty string.
 
 Implementing the Verve Ad SDK
 ------------------------------
