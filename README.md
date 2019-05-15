@@ -1,6 +1,13 @@
 Verve Ad SDK Android
 ====================
 
+Importing the SDK
+-----------------------------
+![alt text](https://cdn.mediabrix.com/sdk4/images/Android-Open.png)
+![alt text](https://cdn.mediabrix.com/sdk4/images/Android-Depend.png)
+![alt text](https://cdn.mediabrix.com/sdk4/images/Android-AAR.png)
+![alt text](https://cdn.mediabrix.com/sdk4/images/Android-Import.png)
+
 Modifying AndroidManifest.xml
 -----------------------------
 Add the following permissions to your project:
