@@ -86,6 +86,8 @@ interstitialAd.showInterstitialAd(zone, context) //If you havent recieved a zone
 ## Rewarded Video Ads
 The class in which you would like to display rewarded video ads will need to implement the IVerveAPIListener interface. The methods the class will implement provide the Activity with information regarding the SDK's ad state.
 
+![alt text](https://cdn.mediabrix.com/sdk4/images/Ad.png)
+
 #### Initialization
 To request a rewarded video ad, you will need to create an `InterstitialAd` object:
 ```
