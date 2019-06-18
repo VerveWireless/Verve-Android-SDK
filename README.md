@@ -1,6 +1,8 @@
 Verve Ad SDK Android
 ====================
 
+Supports Android 4.4 and above
+
 Importing the SDK
 -----------------------------
 ![alt text](https://cdn.mediabrix.com/sdk4/images/Android-Open.png)
