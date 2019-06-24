@@ -213,3 +213,10 @@ The class that implements IVerveAPIListener will recieve callbacks based on what
     }
 
 ``` 
+
+## Proguard
+Copy the following to your Proguard following:
+```
+-keep class com.verve.** { *; }
+-dontwarn com.verve.**
+```
