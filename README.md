@@ -44,6 +44,13 @@ Dependencies
 implementation 'com.google.android.gms:play-services-ads:'
 ```
 
+Initialization
+-----------------------------
+In your application class please add the following: 
+```
+Verve.initialize(this, "kVIGSwWBNJ", "kVIGSwWBNJ")
+```
+
 ## App ID
 Verve should have sent you a unique identifier for your application. This identifier should be used to fill in the fields labelled `APP_ID`. If you do not have an `APP_ID`, please contact your Verve Publisher Services account manager.
 
