@@ -1,4 +1,4 @@
-Verve Ad SDK Android
+Verve Android SDK
 ====================
 
 Supports Android 4.4 and above
