@@ -221,6 +221,12 @@ The class that implements IVerveAPIListener will recieve callbacks based on what
 
 ``` 
 
+## Enabling Roam
+When the user is ready to use Roam enabled features, simply call:
+```
+    Roam.optIn();
+```
+
 ## Proguard
 Copy the following to your Proguard following:
 ```
