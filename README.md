@@ -227,6 +227,27 @@ When the user is ready to use Roam enabled features, simply call:
     Roam.optIn();
 ```
 
+## Requesting Location Permissions
+Roam will only work if location permission has been granted. By default requesting location permissions from the user is your responsability, but if you would like Roam to ask for the location permission than you will need to specify that via the options map as shown below:
+```
+    public class MyApplication extends Application {
+        
+        @Override
+        public void onCreate() {
+            RoamOptions options = new RoamOptions();
+            options.setRequestLocationPermission(true); 
+
+            Roam.optIn(options);
+        }
+        
+    }    
+```
+## Disabling Roam
+To stop monitoring:
+```
+Roam.optOut();
+```
+
 ## Proguard
 Copy the following to your Proguard following:
 ```
