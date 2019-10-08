@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorTrans">#00ff0000</color>
+    <string name="app_name">Verve</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <declare-styleable name="BannerAdView">
+        <attr format="string" name="vrv_ad_keyword"/>
+        <attr name="vrv_ad_size">
+            <enum name="BANNER" value="0"/>
+            <enum name="TABLET_BANNER" value="1"/>
+            <enum name="TABLET_RECTANGLE" value="2"/>
+            <enum name="MEDIUM_RECTANGLE" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
