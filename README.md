@@ -48,7 +48,8 @@ Initialization
 -----------------------------
 In your application class please add the following: 
 ```
-Verve.initialize(this, "APP_SECRET", "APP_ID")
+ Verve.initialize(this, "APPLICATION_ID", "APPLICATION_SECRET");
+
 ```
 
 ## App ID
